@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import "./nav";
+@import "./story";
+@import "./index";
+@import "./rsvp";
+
+
+
+.footer {
+    text-align: center;
+    background-color: #ff5757;
+    border: 1px solid black;
+
+    &__contenedorLogo {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__redes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        padding:0%;
+    }
+
+    &__redesImg {
+        max-width: 30px;
+        padding: 10%;
+    }
+}
+
+/* Gifts */
+
+.cbu {
+    border: 1px solid black;
+    position: relative;
+    right: 125px;
+}
+
+

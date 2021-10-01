@@ -1,0 +1,72 @@
+/* Story */
+@mixin parrafo ($fontFamily, $color, $fontSize) {
+    font-family: $fontFamily;
+    color: $color;
+    font-size: $fontSize;
+}
+
+@mixin titulo ($fontFamily, $color, $fontSize) {
+    font-family: $fontFamily;
+    color: $color;
+    font-size: $fontSize;    
+}
+
+
+.storyUno {
+    text-align: center;
+    padding-top: 2%;
+
+    p {
+        @include parrafo ("Thasadith", black, 20px);
+    }
+
+    h3 {
+        @include titulo ('Parisienne', #ff5757, 35px);
+    }
+}
+
+.storyDos {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+
+    &__text {
+        @include parrafo ("Thasadith", black, 15px);
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    &__title {
+        @include titulo ('Parisienne', #ff5757, 35px);
+    }
+
+    &--howWeMeet {
+        display: flex;
+        margin:1%;
+        align-items: center;
+    }
+
+    &--ourFirstKiss {
+        display: flex;
+        margin: 1%;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    
+    &--proposal {
+        display: flex;
+        margin: 1%;
+        align-items: center;
+    }
+
+    &__img {
+        max-width: 600px;
+        transition: all 0.3s linear;
+    }
+
+    &__img:hover {
+        transform: scale(0.93);
+    }
+}

@@ -1,0 +1,72 @@
+/* RSVP */
+
+.confirmation {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 30% 40%;
+    grid-template-areas: "Ceremony Party"
+                         "CeremonyMap PartyMap"
+                         "Form Form";
+    justify-items: center;
+    align-items: center;
+
+    .ceremony {
+        grid-area: Ceremony;
+        padding-top: 5%;
+
+        &__p{
+            color: #ff5757;
+            font-family: 'Parisienne';
+            font-size: 35px;
+            text-align: center;
+        }
+
+        &__img{
+            max-width: 400px;  
+        }
+    }
+
+    .ceremonyMap {
+        grid-area: CeremonyMap;
+        border: 1px solid black;
+        margin: 3%;
+    }
+
+    .party {
+        grid-area: Party;
+        padding-top: 5%;
+
+        &__p {
+            @extend .ceremony__p;
+        }
+
+        &__img {
+            @extend .ceremony__img;
+        }
+    }
+
+    .partyMap {
+        grid-area: PartyMap;
+        @extend .ceremonyMap; 
+    } 
+}
+
+
+/* Form */
+
+.survey {
+    grid-area: Form;
+    margin: 5%;
+    font-family:'Thasadith';
+    color: black;
+    font-size: 15px;
+}
+
+.surveyItems {
+    padding: 0.5%;
+    width: 100%;
+}
+
+.button {
+    text-align: center;
+}

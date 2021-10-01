@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <meta name="keywords" content="wedding RSVP">
+        <meta name="description" content="Here is where guest will confirm their assistance and also if they have any food restriction">
+        <title>S&M - RSVP</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="../css/estilo.css">
+        <link rel="stylesheet" href="../css/pruebacss.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Tangerine&family=Thasadith&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <header>
+            <a href="../index.html"><img src="../images/logo/G&L eBay Logo.png" alt="logo" class="logo" height="70px" width="80px"></a>
+            <nav class="navbar navbar-expand-lg" id="navbar">
+                <div class="container-fluid">
+                  <!--hamburguesa-->
+                  <a class="navbar-brand" href="#"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><img class="hamburger" src="../images/logos-redes/hamburger-list.png" alt=""></span>
+                  </button>
+                  <!--nav-->
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="story.html">Story</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="confirmation.html">RSPV</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="gift.html">Honeymoon Funds</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="galery.html">Wedding Galery</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </header>
+        <div class="confirmation"> 
+            <section class="ceremony">
+                <p class="ceremony__p">Ceremony</p>
+                <img class="ceremony__img" src="../images/RSVP/fotoceremonia.png" alt=""> 
+            </section>
+            <section class="party">
+                <p class="party__p">Party</p>
+                <img class="party__img" src="../images/RSVP/fotofiesta.png" alt=""> 
+            </section>
+            <section class="ceremonyMap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.372666396566!2d-60.8120798848804!3d-32.91475087760423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b64db20af854b3%3A0xd7849a36d195c050!2sParroquia%20Ntra%20Sra%20del%20Carmen!5e0!3m2!1ses!2sar!4v1630366786374!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
+            <section class="partyMap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13396.52940278108!2d-60.813089921450334!3d-32.92110129635094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b64da8f51418b9%3A0x7f46b4c4c4349788!2sLa%20arbolada%20Eventos!5e0!3m2!1ses!2sar!4v1630367135655!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
+            <section class="survey">
+                <form action="">
+                    <div class="surveyItems">
+                        <label for="">Name</label>
+                        <input type="text">
+                    </div>
+                    <div class="surveyItems"> 
+                        <label for="">Assitance to</label>
+                        <select name="" id="">
+                            <option value="Both">
+                                <label for="">Both</label>
+                            </option>
+                            <option value="Party">
+                                <label for="">Party</label>
+                            </option>
+                            <option value="Ceremony">
+                                <label for="">Ceremony</label>
+                            </option>
+                        </select>
+                    </div>
+                    <div class="surveyItems">
+                        <label for="">Do you have any food restriction?</label>
+                        <input type="radio" name="yes-no">
+                        <label for="">Yes</label>
+                        <input type="radio" name="yes-no">
+                        <label for="">No</label>
+                    </div>
+                    <div class="surveyItems">
+                        <label for="">If yes, please leave your restriction</label>
+                    </div>
+                    <div class="surveyItems">
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="footer__contenedorLogo">
+              <img src="../images/logo/G&L eBay Logo.png" alt="logo" height="70px" width="80px">
+            </div>
+              <ul class="footer__redes">
+                  <li>
+                      <a href="https://open.spotify.com/playlist/04gJbPkuPPhaenLdZc1oO3?si=11b581f44eba4235" target="_blank"><img class="footer__redesImg" src="../images/logos-redes/spotify.png" alt=""></a>
+                  </li>
+                  <li>
+                      <a href="https://www.instagram.com/sabricaba/" target="_blank"><img class="footer__redesImg" src="../images/logos-redes/ig.png" alt=""></a>
+                  </li>
+                  <li>
+                      <a href="https://www.facebook.com/sabricaba/" target="_blank"><img class="footer__redesImg" src="../images/logos-redes/fb.png" alt=""></a>
+                  </li>
+              </ul> 
+          </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    </body>
+</html>

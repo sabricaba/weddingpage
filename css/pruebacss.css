@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+/* CSS para footer, nav y header que se mantiene igual */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Thasadith';
+  color: whitesmoke;
+  background-color: #ff5757;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  border: 1px solid black;
+  z-index: 1; }
+
+.hamburger {
+  width: 100%; }
+
+nav ul li a.nav-link {
+  text-decoration: none;
+  color: whitesmoke; }
+
+nav ul li a.nav-link:hover {
+  text-decoration: none;
+  color: black; }
+
+nav ul li a.nav-link.active {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: bold;
+  text-decoration: underline; }
+
+body {
+  background-color: whitesmoke; }
+
+.textExtraInfo {
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 1%;
+  font-family: 'Thasadith';
+  color: black;
+  text-align: center;
+  font-size: 20px; }
+
+/* Story */
+.storyUno {
+  text-align: center;
+  padding-top: 2%; }
+  .storyUno p {
+    font-family: "Thasadith";
+    color: black;
+    font-size: 20px; }
+  .storyUno h3 {
+    font-family: "Parisienne";
+    color: #ff5757;
+    font-size: 35px; }
+
+.storyDos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center; }
+  .storyDos__text {
+    font-family: "Thasadith";
+    color: black;
+    font-size: 15px;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%; }
+  .storyDos__title {
+    font-family: "Parisienne";
+    color: #ff5757;
+    font-size: 35px; }
+  .storyDos--howWeMeet {
+    display: flex;
+    margin: 1%;
+    align-items: center; }
+  .storyDos--ourFirstKiss {
+    display: flex;
+    margin: 1%;
+    align-items: center;
+    flex-direction: row-reverse; }
+  .storyDos--proposal {
+    display: flex;
+    margin: 1%;
+    align-items: center; }
+  .storyDos__img {
+    max-width: 600px;
+    transition: all 0.3s linear; }
+  .storyDos__img:hover {
+    transform: scale(0.93); }
+
+/* index */
+.index--text {
+  font-family: 'Parisienne', cursive;
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 2%;
+  color: #ff5757; }
+
+.index--date {
+  font-family: 'Thasadith';
+  color: #221f1f;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 2%; }
+
+/* RSVP */
+.confirmation {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 30% 30% 40%;
+  grid-template-areas: "Ceremony Party" "CeremonyMap PartyMap" "Form Form";
+  justify-items: center;
+  align-items: center; }
+  .confirmation .ceremony {
+    grid-area: Ceremony;
+    padding-top: 5%; }
+    .confirmation .ceremony__p, .confirmation .party__p {
+      color: #ff5757;
+      font-family: 'Parisienne';
+      font-size: 35px;
+      text-align: center; }
+    .confirmation .ceremony__img, .confirmation .party__img {
+      max-width: 400px; }
+  .confirmation .ceremonyMap, .confirmation .partyMap {
+    grid-area: CeremonyMap;
+    border: 1px solid black;
+    margin: 3%; }
+  .confirmation .party {
+    grid-area: Party;
+    padding-top: 5%; }
+  .confirmation .partyMap {
+    grid-area: PartyMap; }
+
+/* Form */
+.survey {
+  grid-area: Form;
+  margin: 5%;
+  font-family: 'Thasadith';
+  color: black;
+  font-size: 15px; }
+
+.surveyItems {
+  padding: 0.5%;
+  width: 100%; }
+
+.button {
+  text-align: center; }
+
+.footer {
+  text-align: center;
+  background-color: #ff5757;
+  border: 1px solid black; }
+  .footer__contenedorLogo {
+    display: flex;
+    justify-content: center; }
+  .footer__redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0%; }
+  .footer__redesImg {
+    max-width: 30px;
+    padding: 10%; }
+
+/* Gifts */
+.cbu {
+  border: 1px solid black;
+  position: relative;
+  right: 125px; }
