@@ -235,8 +235,14 @@ body {
     grid-area: PartyMap; }
   .confirmation .center-element .ceremony__p, .confirmation .center-element .party__p {
     display: none; }
+    @media only screen and (max-width: 849px) {
+      .confirmation .center-element .ceremony__p, .confirmation .center-element .party__p {
+        display: block; } }
   .confirmation .center-element .party__p {
     display: none; }
+    @media only screen and (max-width: 849px) {
+      .confirmation .center-element .party__p {
+        display: block; } }
 
 /* Form */
 .survey {

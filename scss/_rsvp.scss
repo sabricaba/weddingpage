@@ -53,10 +53,18 @@
 
     .center-element .ceremony__p {
         display: none;
+
+        @media only screen and (max-width:849px){
+            display: block;
+        }
     }
 
     .center-element .party__p {
         display: none;
+
+        @media only screen and (max-width:849px){
+            display: block;
+        }
     }
 }
 
@@ -103,5 +111,5 @@
     .partyMap {
         width: 100%;
     }
-    }
+}
     
