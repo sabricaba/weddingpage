@@ -19,6 +19,7 @@
             font-family: 'Parisienne';
             font-size: 35px;
             text-align: center;
+            margin-bottom: 0;
         }
 
         &__img{
@@ -28,8 +29,8 @@
 
     .ceremonyMap {
         grid-area: CeremonyMap;
-        border: 1px solid black;
-        margin: 3%;
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
 
     .party {
@@ -49,6 +50,14 @@
         grid-area: PartyMap;
         @extend .ceremonyMap; 
     } 
+
+    .center-element .ceremony__p {
+        display: none;
+    }
+
+    .center-element .party__p {
+        display: none;
+    }
 }
 
 
@@ -69,4 +78,30 @@
 
 .button {
     text-align: center;
+    margin-bottom: 3%;
 }
+
+@media only screen and (max-width:849px){
+    .confirmation {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+
+        .ceremony {
+            display: none;
+        }
+
+        .party {
+            display: none;
+        }
+    }
+    .ceremonyMap {
+        width: 100%;
+    }
+
+    .partyMap {
+        width: 100%;
+    }
+    }
+    

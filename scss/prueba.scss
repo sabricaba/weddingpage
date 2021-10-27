@@ -10,14 +10,11 @@
 @import "./galery";
 @import "./honeymoon";
 
-.textExtraInfo {
-    padding-left: 25%;
-    padding-right: 25%;
-    padding-top: 1%;
-    font-family:'Thasadith';
-    color: black;
-    text-align: center;
-    font-size: 20px;
+
+
+.center-element {
+    display: block;
+    margin: 0 auto;
 }
 
 .footer {

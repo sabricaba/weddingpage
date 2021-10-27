@@ -1,1 +1,1 @@
-Hola! Soy Sabrina y la idea de la pagina es desarrollar la nueva forma de invitacion para casamientos.
+Hola! Soy Sabrina y la idea de la pagina es desarrollar una nueva forma de invitacion para casamientos.

@@ -17,11 +17,12 @@
     padding-top: 2%;
 
     p {
-        @include parrafo ("Thasadith", black, 20px);
+        @include parrafo ("Thasadith", black, 28px);
+        margin-bottom: 0;
     }
 
     h3 {
-        @include titulo ('Parisienne', #ff5757, 35px);
+        @include titulo ('Parisienne', #ff5757, 38px);
     }
 }
 
@@ -40,6 +41,7 @@
 
     &__title {
         @include titulo ('Parisienne', #ff5757, 35px);
+        margin-top: 3%;
     }
 
     &--howWeMeet {
@@ -62,7 +64,7 @@
     }
 
     &__img {
-        max-width: 600px;
+        max-width: 500px;
         transition: all 0.3s linear;
     }
 
@@ -70,3 +72,84 @@
         transform: scale(0.93);
     }
 }
+
+@media only screen and (max-width:480px) {
+    .storyUno {
+        p {
+            @include parrafo ("Thasadith", black, 18px);
+        }
+
+        h3 {
+            @include titulo ('Parisienne', #ff5757, 28px);
+        }
+    }
+    .storyDos {
+        &__img {
+            max-width: 250px;
+        }
+
+        &__text {
+            @include parrafo ("Thasadith", black, 12px);
+        }
+    
+        &__title {
+            @include titulo ('Parisienne', #ff5757, 25px);
+        }
+
+        &--howWeMeet {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        &--ourFirstKiss {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        &--proposal {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    }
+    
+@media only screen and (min-width:481px) and (max-width:1020px) {
+    .storyUno {
+        p {
+            @include parrafo ("Thasadith", black, 20px);
+        }
+
+        h3 {
+            @include titulo ('Parisienne', #ff5757, 30px);
+        }
+    }
+    .storyDos {
+        &__img {
+            max-width: 400px;
+        }
+
+        &__text {
+            @include parrafo ("Thasadith", black, 15px);
+        }
+    
+        &__title {
+            @include titulo ('Parisienne', #ff5757, 28px);
+        }
+
+        &--howWeMeet {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        &--ourFirstKiss {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        &--proposal {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    }
+    
